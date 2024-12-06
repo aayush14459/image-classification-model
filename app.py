@@ -58,5 +58,5 @@ else:
 
     score = tf.nn.softmax(predict)
     st.image(image, width=200)
-    st.write('Veg/Fruit in image is ' + data_cat[np.argmax(score)])
+    st.write('Veg/Fruit in image their predicted class is ' + data_cat[np.argmax(score)])
     st.write('With accuracy of ' + str(np.max(score)*100))
